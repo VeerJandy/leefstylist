@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
-  // darkMode: ['class', '[data-theme="dark"]'],
+  content: ['./src/**/*.{tsx,style.ts}'],
   theme: {
     container: {
       center: true,
@@ -14,16 +13,12 @@ module.exports = {
         '2xl': '93.75rem'
       }
     },
-    fontSize: {
-      h1: ['var(--h1)', 'var(--lh-h1)'],
-      h2: ['var(--h2)', 'var(--lh-h2)'],
-      h3: ['var(--h3)', 'var(--lh-h3)'],
-      h4: ['var(--h4)', 'var(--lh-h4)'],
-      h5: ['var(--h5)', 'var(--lh-h5)'],
-      h6: ['var(--h6)', 'var(--lh-h6)'],
-      p: ['var(--p)', 'var(--lh-p)'],
-      span: ['var(--span)', 'var(--lh-span)'],
-      small: ['var(--small)', 'var(--lh-small)']
+    colors: {
+      transparent: 'transparent',
+      white: 'var(--white)',
+      black: 'var(--black)',
+      dark: 'var(--dark)',
+      light: 'var(--light)'
     },
     borderRadius: {
       none: '0',

@@ -1,0 +1,21 @@
+.lock {
+  overflow: hidden;
+  touch-action: none;
+  overscroll-behavior: none;
+}
+
+.scroll-bar {
+  &::-webkit-scrollbar {
+    width: 0.375rem;
+    height: 0.375rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #212121;
+    border-radius: 1.25rem;
+  }
+}

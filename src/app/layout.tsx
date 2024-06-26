@@ -2,13 +2,15 @@ import '~/styles/index.css'
 
 // import { promises as fs } from 'fs'
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
-import { ReactNode } from 'react'
+import { Inter } from 'next/font/google'
+import type { ReactNode } from 'react'
+
+import { Header } from '~/modules/header'
 
 // import type { Locale } from '~/i18n/i18n'
 
-const font = Roboto({
-  weight: ['400', '700'],
+const font = Inter({
+  weight: ['400', '600'],
   subsets: ['latin'],
   display: 'swap'
 })
@@ -32,6 +34,7 @@ const RootLayout = async ({ children }: RootLayoutProps) => {
   return (
     <html lang="en" className={font.className}>
       <body className="scroll-bar">
+        <Header />
         <main>{children}</main>
       </body>
     </html>

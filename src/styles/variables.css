@@ -1,0 +1,41 @@
+/*===================================================================*/
+/* Colors */
+:root {
+  --white: #fff;
+  --black: #000;
+  --light: #E5E6EB;
+  --dark: #222222;
+}
+
+/*===================================================================*/
+/* Border radius */
+:root {
+  --border-radius-low: 0.25rem;
+  --border-radius: 0.5rem;
+  --border-radius-medium: 0.75rem;
+  --border-radius-big: 1.25rem;
+  --border-radius-full: 999rem;
+}
+
+
+/*===================================================================*/
+/* Transitions */
+:root {
+  --transition-low: 0.2s;
+  --transition: 0.3s;
+  --transition-medium: 0.422s;
+}
+
+/*===================================================================*/
+/* Z-index */
+:root {
+  --z-index-toast: 200;
+  --z-index-popup: 200;
+  --z-index-modal: 190;
+  --z-index-header: 100;
+  --z-index-high: 20;
+  --z-index-medium: 10;
+  --z-index-low: 5;
+  --z-index-one: 1;
+  --z-index-minus: -1;
+}
