@@ -2,7 +2,7 @@ import { Button } from '~/ui/button'
 import IconArrowBottom from '~/ui/icons/IconArrowBottom'
 
 const OrderSummary = () => (
-  <section className="fixed bottom-0 w-full border-t border-light py-3">
+  <section className="bg-white/80 fixed bottom-0 w-full border-t border-light py-3 backdrop-blur-lg backdrop-saturate-[180%]">
     <div className="container flex items-center justify-between">
       <div>
         <p className="flex items-center gap-2 font-semibold">

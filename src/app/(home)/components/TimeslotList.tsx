@@ -1,6 +1,6 @@
 const TimeslotList = () => {
   return (
-    <section className="container mt-4">
+    <section className="container mt-4 pb-12">
       <ul className="scroll-bar flex max-h-80 flex-col gap-3 overflow-scroll">
         <li
           className="flex items-center gap-2 rounded-medium border border-light px-4 py-3"
