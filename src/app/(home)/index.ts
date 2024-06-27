@@ -1,3 +1,3 @@
-import Home from './components/Home'
+import MainPage from './components/MainPage'
 
-export { Home }
+export { MainPage }

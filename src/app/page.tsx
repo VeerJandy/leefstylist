@@ -1,5 +1,5 @@
-import { Home } from './(home)'
+import { MainPage } from './(home)'
 
-const Page = () => <Home />
+const Page = () => <MainPage />
 
 export default Page

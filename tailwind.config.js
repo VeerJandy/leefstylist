@@ -21,6 +21,8 @@ module.exports = {
       light: 'var(--light)',
       'gray-1': 'var(--gray-1)',
       'gray-2': 'var(--gray-2)',
+      'gray-3': 'var(--gray-3)',
+      'gray-4': 'var(--gray-4)',
       blue: 'var(--blue)'
     },
     borderRadius: {
@@ -48,6 +50,22 @@ module.exports = {
       low: 'var(--z-index-low)',
       one: 'var(--z-index-one)',
       minus: 'var(--z-index-minus)'
+    },
+    extend: {
+      animation: {
+        'spinner-ease-spin': 'spinner-spin 0.8s ease infinite',
+        'spinner-linear-spin': 'spinner-spin 0.8s linear infinite'
+      },
+      keyframes: {
+        'spinner-spin': {
+          '0%': {
+            transform: 'rotate(0deg)'
+          },
+          '100%': {
+            transform: 'rotate(360deg)'
+          }
+        }
+      }
     }
   },
   plugins: []
