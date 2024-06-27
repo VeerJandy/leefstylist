@@ -19,7 +19,8 @@ const nextConfig = {
       '~/styles': path.resolve(__dirname, './src/styles'),
       '~/ui': path.resolve(__dirname, './src/ui'),
       '~/i18n': path.resolve(__dirname, './src/i18n'),
-      '~/components': path.resolve(__dirname, './src/components')
+      '~/components': path.resolve(__dirname, './src/components'),
+      '~/utils': path.resolve(__dirname, './src/utils')
     }
     return config
   },

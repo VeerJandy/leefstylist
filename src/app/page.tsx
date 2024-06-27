@@ -1,5 +1,5 @@
-const Home = () => {
-  return <section className="mt-16">Home</section>
-}
+import { Home } from './(home)'
 
-export default Home
+const Page = () => <Home />
+
+export default Page

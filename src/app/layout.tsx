@@ -23,7 +23,7 @@ interface RootLayoutProps {
 
 const RootLayout = async ({ children }: RootLayoutProps) => (
   <html lang="en" className={font.className}>
-    <body className="scroll-bar">
+    <body className="scroll-bar text-dark">
       <Header />
       <main>{children}</main>
     </body>

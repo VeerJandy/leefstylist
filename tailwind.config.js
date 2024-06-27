@@ -18,7 +18,10 @@ module.exports = {
       white: 'var(--white)',
       black: 'var(--black)',
       dark: 'var(--dark)',
-      light: 'var(--light)'
+      light: 'var(--light)',
+      'gray-1': 'var(--gray-1)',
+      'gray-2': 'var(--gray-2)',
+      blue: 'var(--blue)'
     },
     borderRadius: {
       none: '0',
