@@ -3,7 +3,9 @@
 import type { UseButton } from './useButton'
 import { useButton } from './useButton'
 
-const Button = (props: UseButton) => {
+export interface ButtonProps extends UseButton {}
+
+const Button = (props: ButtonProps) => {
   const {
     state: { buttonProps }
   } = useButton(props)
