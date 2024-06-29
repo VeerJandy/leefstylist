@@ -13,8 +13,8 @@ const font = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'WoodLand',
-  description: 'WoodLand'
+  title: 'Leefslylist',
+  description: 'Leefslylist'
 }
 
 interface RootLayoutProps {
