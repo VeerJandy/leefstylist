@@ -8,7 +8,7 @@ const Days = () => {
     state: { daysInMonth, startingDayIndex, selectedDate },
     functions: { onSetDate }
   } = useCalendarContext()
-  console.log('1', daysInMonth)
+
   return (
     <div className="grid grid-cols-7 px-5 py-4">
       {Array.from({ length: startingDayIndex - 1 }).map((_, index) => (

@@ -1,7 +1,5 @@
 import { Spinner } from '~/ui/spinner'
 
-const Loading = () => (
-  <Spinner className="container mt-20 flex justify-center" />
-)
+const Loading = () => <Spinner className="mt-20" />
 
 export default Loading

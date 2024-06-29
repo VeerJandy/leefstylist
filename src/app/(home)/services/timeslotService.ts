@@ -1,14 +1,15 @@
+import { format } from 'date-fns'
+
+import type { DateTimeslots } from '~/app/(home)'
 import type { BackResponse } from '~/models/GlobalModel'
 import { request } from '~/utils/request'
 
-import type { TimeslotsModel } from '../models/TimeslotsModel'
-
 export const getTimeslots = async (
   date: Date
-): Promise<BackResponse<TimeslotsModel>> => {
+): Promise<BackResponse<DateTimeslots | null>> => {
   try {
-    return await request<TimeslotsModel>('/timeslots', {
-      data: { date },
+    return await request<DateTimeslots | null>('/timeslots', {
+      data: { date: format(date, 'yyyy-MM-dd') },
       method: 'POST',
       next: {
         cache: 'no-store'
@@ -17,9 +18,7 @@ export const getTimeslots = async (
   } catch (error) {
     return {
       error: true,
-      response: {
-        timeslots: []
-      }
+      response: null
     }
   }
 }
