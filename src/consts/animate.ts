@@ -35,7 +35,6 @@ export const variants: Variants = {
       visible: { opacity: 1, transition }
     }
   },
-
   height: {
     ...variantsNames,
     variants: {
