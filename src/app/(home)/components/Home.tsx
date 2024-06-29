@@ -16,11 +16,14 @@ import TimeslotListLoading from './TimeslotListLoading'
 
 interface HomeProps {
   events: EventModel
+  timeslots: DateTimeslots | null
 }
 
-const Home = ({ events }: HomeProps) => {
+const Home = ({ events, timeslots: timeslotsProps }: HomeProps) => {
   const [isLoading, setIsLoading] = useState(false)
-  const [timeslots, setTimeslots] = useState<DateTimeslots | null>(null)
+  const [timeslots, setTimeslots] = useState<DateTimeslots | null>(
+    timeslotsProps
+  )
 
   const onGetTimeslots = useCallback(async (date: Date) => {
     setIsLoading(() => true)
